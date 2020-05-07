@@ -1,0 +1,82 @@
+.stage-6{
+  display: none;
+  @media #{$max-mobile-width}{
+    margin-top: 44px;
+    padding-bottom: 96px;
+  }
+  @media #{$min-tablet-width} {
+    margin-top: 44px;
+    padding-bottom: 63px;
+  }
+  @media #{$min-desktop-width} {
+    margin-top: 91px;
+    padding-bottom: 105px;
+  }
+}
+.stage-6__title {
+  text-align: center;
+  font-weight: 700;
+  @include centers;
+  text-transform: uppercase;
+  @media #{$max-mobile-width} {
+    font-size: 2rem;
+    max-width: 415px;
+    line-height: 2.4rem;
+    margin-bottom: 16px;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 2rem;
+    max-width: 420px;
+    line-height: 2.1rem;
+    margin-bottom: 16px;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 2.6rem;
+    margin-bottom: 15px;
+    max-width: 768px;
+    line-height: 3.6rem;
+  }
+}
+.stage-6__txt {
+  display: block;
+  @include centers;
+  text-align: center;
+  @media #{$max-mobile-width} {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    max-width: 260px;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    width: 260px;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    width: 280px;
+  }
+}
+.stage-6__btn-field {
+  @include centers;
+  @media #{$max-mobile-width} {
+    max-width: 186px;
+    margin-top: 40px;
+  }
+  @media #{$min-tablet-width} {
+    margin-top: 40px;
+    width: 186px;
+  }
+  @media #{$min-desktop-width} {
+    width: 186px;
+    margin-top: 55px;
+  }
+}
+.stage-6__btn {
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  @include main-btn;
+  min-height: 5.6rem;
+}

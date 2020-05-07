@@ -1,0 +1,57 @@
+@keyframes drill {
+  0%{transform: translateY(0);}
+  2%{transform: translateY(-5px);}
+  4%{transform: translateY(5px);}
+  6%{transform: translateY(-5px);}
+  8%{transform: translateY(5px);}
+  10%{transform: translateY(-5px);}
+  12%{transform: translateY(0px);}
+}
+.socials {
+  position: fixed;
+  left: 10px;
+  bottom: 20px;
+  z-index: 3;
+  animation: drill 5s ease-in-out infinite;
+  @media #{$max-mobile-width} {
+    width: 100px;
+    height: 220px;
+  }
+  @media #{$min-tablet-width} {
+    width: 100px;
+    height: 220px;
+  }
+  @media #{$min-desktop-width} {
+    width: 120px;
+    height: 280px;
+    left: 20px;
+    bottom: 30px;
+  }
+}
+.social__link {
+  border-radius: 50%;
+  display: block;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);
+  @media #{$max-mobile-width} {
+    height: 100px;
+  }
+  @media #{$min-tablet-width} {
+    height: 100px;
+  }
+  @media #{$min-desktop-width} {
+    height: 120px;
+  }
+}
+.social__link--whatsapp {
+  background-color: #1A9C0F;
+  @media #{$min-desktop-width} {
+    display: none;
+  }
+}
+.social__link--telegram {
+  margin-top: 10px;
+  background-color: #33A5DE;
+  @media #{$min-desktop-width} {
+    margin-top: 20px;
+  }
+}
